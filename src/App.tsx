@@ -4,7 +4,7 @@ import Hero from './components/Hero'
 import Nav from './components/Nav'
 import Tech from './components/Technologies/Tech'
 import type { ITechnology } from './types/Technology'
-import TechCard from './components/Technologies/TechCard'
+
 
 const techData = async (): Promise<ITechnology[]> => {
   const res = await fetch("/data.json");

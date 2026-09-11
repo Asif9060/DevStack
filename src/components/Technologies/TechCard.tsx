@@ -1,10 +1,21 @@
+import { useState } from "react";
 import type { ITechnology } from "../../types/Technology";
 import symbol from "/Symbol.png"
+import { toast } from "react-toastify";
+import { FaCheck } from "react-icons/fa6";
 
 const TechCard = ({ tech }: { tech: ITechnology }) => {
+
+    const [isSelected, setIsSelected] = useState(false);
+
+    const handleTackSelection = () => {
+        setIsSelected(true)
+        toast.success("Stack Added Successfully", { position: "bottom-right", })
+    }
+
     return (
         <div className="max-w-7xl mx-auto mt-10">
-            <div className="w-75 shadow-sm p-5 rounded-2xl font-jakarta">
+            <div className={`w-75 shadow-sm p-5 rounded-2xl font-jakarta ${isSelected ? "border-2 border-[#EC4899]" : ""}`}>
                 <div className="flex justify-between mb-8">
                     <img className="w-8" src={tech.icon} alt="" />
                     <p className="bg-[#E0F2FE] text-[#0EA5E9] rounded-full px-[10.4px] py-0.5 flex items-center text-[11.5px]">{tech.badge}</p>
@@ -21,7 +32,7 @@ const TechCard = ({ tech }: { tech: ITechnology }) => {
                 </div>
 
                 <div className="text-center mt-4">
-                    <button className="w-full btn font-normal bg-black text-white py-2.5 rounded-xl cursor-pointer">Add to Stack</button>
+                    <button disabled={isSelected} onClick={handleTackSelection} className={`w-full py-2 btn text-[13px] rounded-lg ${isSelected ? "bg-white border-[#EC4899] text-[#EC4899] border-2 font-bold btn-disabled cursor-not-allowed pointer-events-auto!" : "bg-black text-white font-normal cursor-pointer"}`}>{isSelected ? <> <FaCheck/> Added To Stack</> : "Add To Stack"}</button>
                 </div>
 
             </div>
