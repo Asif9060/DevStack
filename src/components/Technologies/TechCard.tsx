@@ -7,7 +7,7 @@ const TechCard = ({ tech }: { tech: ITechnology }) => {
             <div className="w-75 shadow-sm p-5 rounded-2xl font-jakarta">
                 <div className="flex justify-between mb-8">
                     <img className="w-8" src={tech.icon} alt="" />
-                    <p className="bg-[#E0F2FE] text-[#0EA5E9] rounded-full px-3 py-0.5">{tech.badge}</p>
+                    <p className="bg-[#E0F2FE] text-[#0EA5E9] rounded-full px-[10.4px] py-0.5 flex items-center text-[11.5px]">{tech.badge}</p>
                 </div>
                 <div className="mb-5">
                     <h2 className="mb-3 font-bold text-lg">{tech.name}</h2>
@@ -21,7 +21,7 @@ const TechCard = ({ tech }: { tech: ITechnology }) => {
                 </div>
 
                 <div className="text-center mt-4">
-                    <button className="w-full bg-black text-white py-2.5 rounded-xl">Add to Stack</button>
+                    <button className="w-full btn font-normal bg-black text-white py-2.5 rounded-xl cursor-pointer">Add to Stack</button>
                 </div>
 
             </div>

@@ -16,7 +16,7 @@ const Tech = ({ techPromise }: TechProps) => {
                 <p className="text-[#64748B] font-jakarta">Pick one technology per category to build your ideal stack.</p>
             </div>
 
-            <div className="grid grid-cols-4 max-w-7xl mx-auto">
+            <div className="grid grid-cols-4 max-w-7xl mx-auto gap-6">
                 <div className=" grid col-span-3 grid-cols-3">
                     {
                         fetchedTech.map((tech) => {
