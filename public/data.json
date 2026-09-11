@@ -1,0 +1,152 @@
+[
+    {
+        "id": "react",
+        "name": "React",
+        "category": "Frontend",
+        "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "rating": 4.9,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Popular"
+    },
+    {
+        "id": "vue",
+        "name": "Vue.js",
+        "category": "Frontend",
+        "description": "A progressive framework for building user interfaces with an approachable and performant core.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+        "rating": 4.8,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Approachable"
+    },
+    {
+        "id": "nextjs",
+        "name": "Next.js",
+        "category": "Frontend",
+        "description": "The React framework for the web, enabling server-side rendering and static site generation.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        "rating": 4.8,
+        "difficulty": "Intermediate",
+        "badge": "Full-Stack"
+    },
+    {
+        "id": "nodejs",
+        "name": "Node.js",
+        "category": "Backend",
+        "description": "A cross-platform, open-source JavaScript runtime environment for building scalable network applications.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        "rating": 4.7,
+        "difficulty": "Intermediate",
+        "badge": "Essential"
+    },
+    {
+        "id": "django",
+        "name": "Django",
+        "category": "Backend",
+        "description": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+        "rating": 4.6,
+        "difficulty": "Intermediate",
+        "badge": "Batteries Included"
+    },
+    {
+        "id": "postgresql",
+        "name": "PostgreSQL",
+        "category": "Database",
+        "description": "A powerful, open-source object-relational database system with proven reliability and data integrity.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        "rating": 4.9,
+        "difficulty": "Intermediate",
+        "badge": "Top SQL"
+    },
+    {
+        "id": "mongodb",
+        "name": "MongoDB",
+        "category": "Database",
+        "description": "A source-available cross-platform document-oriented NoSQL database program for high volume storage.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+        "rating": 4.5,
+        "difficulty": "Intermediate",
+        "badge": "NoSQL"
+    },
+    {
+        "id": "typescript",
+        "name": "TypeScript",
+        "category": "Language",
+        "description": "A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        "rating": 4.9,
+        "difficulty": "Intermediate",
+        "badge": "Type-Safe"
+    },
+    {
+        "id": "python",
+        "name": "Python",
+        "category": "Language",
+        "description": "A versatile, high-level programming language emphasizing code readability and simplicity.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        "rating": 4.9,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Versatile"
+    },
+    {
+        "id": "tailwind",
+        "name": "Tailwind CSS",
+        "category": "Styling",
+        "description": "A utility-first CSS framework packed with classes to build any design, directly in your markup.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        "rating": 4.8,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Utility-First"
+    },
+    {
+        "id": "sass",
+        "name": "Sass",
+        "category": "Styling",
+        "description": "A preprocessor scripting language that is interpreted or compiled into CSS for styling websites.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+        "rating": 4.4,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Classic"
+    },
+    {
+        "id": "docker",
+        "name": "Docker",
+        "category": "DevOps",
+        "description": "A platform for developing, shipping, and running applications inside lightweight, portable containers.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        "rating": 4.8,
+        "difficulty": "Intermediate",
+        "badge": "Containers"
+    },
+    {
+        "id": "kubernetes",
+        "name": "Kubernetes",
+        "category": "DevOps",
+        "description": "An open-source container orchestration system for automating software deployment, scaling, and management.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+        "rating": 4.7,
+        "difficulty": "Advanced",
+        "badge": "Orchestration"
+    },
+    {
+        "id": "git",
+        "name": "Git",
+        "category": "Tools",
+        "description": "A free and open-source distributed version control system designed to handle everything from small to large projects.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        "rating": 4.9,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Essential"
+    },
+    {
+        "id": "figma",
+        "name": "Figma",
+        "category": "Tools",
+        "description": "A collaborative web application for interface design, with additional offline features enabled by desktop apps.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+        "rating": 4.8,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Design"
+    }
+]
