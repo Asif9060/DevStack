@@ -7,7 +7,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         "rating": 4.9,
         "difficulty": "Beginner-Friendly",
-        "badge": "Popular"
+        "badge": "Popular",
+        "badgeBg": "#E0F7FA",
+        "badgeText": "#0891B2"
     },
     {
         "id": "vue",
@@ -17,7 +19,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
         "rating": 4.8,
         "difficulty": "Beginner-Friendly",
-        "badge": "Approachable"
+        "badge": "Approachable",
+        "badgeBg": "#D1FAE5",
+        "badgeText": "#059669"
     },
     {
         "id": "nextjs",
@@ -27,7 +31,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
         "rating": 4.8,
         "difficulty": "Intermediate",
-        "badge": "Full-Stack"
+        "badge": "Full-Stack",
+        "badgeBg": "#F3F4F6",
+        "badgeText": "#111827"
     },
     {
         "id": "nodejs",
@@ -37,7 +43,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
         "rating": 4.7,
         "difficulty": "Intermediate",
-        "badge": "Essential"
+        "badge": "Essential",
+        "badgeBg": "#DCFCE7",
+        "badgeText": "#15803D"
     },
     {
         "id": "django",
@@ -47,7 +55,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
         "rating": 4.6,
         "difficulty": "Intermediate",
-        "badge": "Batteries Included"
+        "badge": "Batteries Included",
+        "badgeBg": "#F3F4F6",
+        "badgeText": "#092E20"
     },
     {
         "id": "postgresql",
@@ -57,7 +67,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
         "rating": 4.9,
         "difficulty": "Intermediate",
-        "badge": "Top SQL"
+        "badge": "Top SQL",
+        "badgeBg": "#E0E7FF",
+        "badgeText": "#336791"
     },
     {
         "id": "mongodb",
@@ -67,7 +79,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
         "rating": 4.5,
         "difficulty": "Intermediate",
-        "badge": "NoSQL"
+        "badge": "NoSQL",
+        "badgeBg": "#D1FAE5",
+        "badgeText": "#00684A"
     },
     {
         "id": "typescript",
@@ -77,7 +91,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
         "rating": 4.9,
         "difficulty": "Intermediate",
-        "badge": "Type-Safe"
+        "badge": "Type-Safe",
+        "badgeBg": "#DBEAFE",
+        "badgeText": "#3178C6"
     },
     {
         "id": "python",
@@ -87,7 +103,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
         "rating": 4.9,
         "difficulty": "Beginner-Friendly",
-        "badge": "Versatile"
+        "badge": "Versatile",
+        "badgeBg": "#FEF9C3",
+        "badgeText": "#3776AB"
     },
     {
         "id": "tailwind",
@@ -97,7 +115,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
         "rating": 4.8,
         "difficulty": "Beginner-Friendly",
-        "badge": "Utility-First"
+        "badge": "Utility-First",
+        "badgeBg": "#CFFAFE",
+        "badgeText": "#06B6D4"
     },
     {
         "id": "sass",
@@ -107,7 +127,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
         "rating": 4.4,
         "difficulty": "Beginner-Friendly",
-        "badge": "Classic"
+        "badge": "Classic",
+        "badgeBg": "#FCE7F3",
+        "badgeText": "#CD6799"
     },
     {
         "id": "docker",
@@ -117,7 +139,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
         "rating": 4.8,
         "difficulty": "Intermediate",
-        "badge": "Containers"
+        "badge": "Containers",
+        "badgeBg": "#E0F2FE",
+        "badgeText": "#2496ED"
     },
     {
         "id": "kubernetes",
@@ -127,7 +151,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
         "rating": 4.7,
         "difficulty": "Advanced",
-        "badge": "Orchestration"
+        "badge": "Orchestration",
+        "badgeBg": "#E0E7FF",
+        "badgeText": "#326CE5"
     },
     {
         "id": "git",
@@ -137,7 +163,9 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
         "rating": 4.9,
         "difficulty": "Beginner-Friendly",
-        "badge": "Essential"
+        "badge": "Essential",
+        "badgeBg": "#FEE2E2",
+        "badgeText": "#F05032"
     },
     {
         "id": "figma",
@@ -147,6 +175,8 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
         "rating": 4.8,
         "difficulty": "Beginner-Friendly",
-        "badge": "Design"
+        "badge": "Design",
+        "badgeBg": "#F3E8FF",
+        "badgeText": "#A259FF"
     }
 ]

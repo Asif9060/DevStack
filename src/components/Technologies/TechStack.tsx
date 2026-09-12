@@ -13,7 +13,7 @@ const TechStack = ({ selectedTechs, setSelectedTechs }: CardProps) => {
     const handleRemoveTech = (techName: string) => {
         const remainingTech = selectedTechs.filter((tech) => tech.name !== techName)
         setSelectedTechs(remainingTech)
-        toast.warning(` ${techName} removed from your stack`, { position: "bottom-right" })
+        toast.warning(`Removed ${techName} from your tech stack.`, { position: "bottom-right" })
     }
 
     const handleRemoveAllTech = () => {
@@ -26,7 +26,7 @@ const TechStack = ({ selectedTechs, setSelectedTechs }: CardProps) => {
             <div className="p-5 shadow-sm rounded-2xl">
                 <div className="mb-5">
                     <h2 className="text-[16px] text-[#0F172A] font-bold">Your Stack</h2>
-                    <p className="text-[#94A3B8] text-[12px] font-normal">{selectedTechs.length} technologies selected</p>
+                    <p className="text-[#94A3B8] text-[12px] font-normal">{selectedTechs.length > 0 ? `${selectedTechs.length} Technology Selected` : "No technologies selected yet"}</p>
                 </div>
                 <div className={`${selectedTechs.length > 0 ? "" : "p-6 border border-[#E2E8F0] rounded-xl border-dotted "}`}>
                     {

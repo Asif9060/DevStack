@@ -6,5 +6,7 @@ export interface ITechnology {
     icon: string,
     rating: number,
     difficulty: string,
-    badge: string
+    badge: string,
+    badgeBg: string,
+    badgeText: string
 }

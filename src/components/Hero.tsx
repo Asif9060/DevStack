@@ -2,8 +2,8 @@ import heroImg from "../assets/banner-stack.png"
 const Hero = () => {
     return (
         <div className="flex items-center max-w-7xl mx-auto mt-10">
-            <div>
-                <div className="font-inter font-bold text-6xl mb-7 mr-17 tracking-tighter">
+            <div className="text-center md:text-left">
+                <div className="font-inter font-bold md:text-6xl text-3xl mb-7 md:mr-17 whitespace-nowrap tracking-tighter">
                     <h2 className="text-[#0F172A]">Build Your Ideal</h2>
                     <h2 className="bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] text-transparent bg-clip-text">Development Stack</h2>
                 </div>
