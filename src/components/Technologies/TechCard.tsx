@@ -1,15 +1,24 @@
-import { useState } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import type { ITechnology } from "../../types/Technology";
 import symbol from "/Symbol.png"
 import { toast } from "react-toastify";
 import { FaCheck } from "react-icons/fa6";
 
-const TechCard = ({ tech }: { tech: ITechnology }) => {
+interface CardProps {
+    tech: ITechnology,
+    selectedTechs: ITechnology[],
+    setSelectedTechs: Dispatch<SetStateAction<ITechnology[]>>
+}
 
-    const [isSelected, setIsSelected] = useState(false);
+const TechCard = ({ tech, selectedTechs, setSelectedTechs }: CardProps) => {
+     
 
-    const handleTackSelection = () => {
-        setIsSelected(true)
+    const isSelected = selectedTechs.some((selectedTech) => {
+        return selectedTech.id === tech.id
+    })
+
+    const handleStackSelection = () => {
+        setSelectedTechs([...selectedTechs, tech]);
         toast.success("Stack Added Successfully", { position: "bottom-right", })
     }
 
@@ -32,7 +41,7 @@ const TechCard = ({ tech }: { tech: ITechnology }) => {
                 </div>
 
                 <div className="text-center mt-4">
-                    <button disabled={isSelected} onClick={handleTackSelection} className={`w-full py-2 btn text-[13px] rounded-lg ${isSelected ? "bg-white border-[#EC4899] text-[#EC4899] border-2 font-bold btn-disabled cursor-not-allowed pointer-events-auto!" : "bg-black text-white font-normal cursor-pointer"}`}>{isSelected ? <> <FaCheck/> Added To Stack</> : "Add To Stack"}</button>
+                    <button disabled={isSelected} onClick={handleStackSelection} className={`w-full py-2 btn text-[13px] rounded-lg ${isSelected ? "bg-white border-[#EC4899] text-[#EC4899] border-2 font-bold btn-disabled cursor-not-allowed pointer-events-auto!" : "bg-black text-white font-normal cursor-pointer"}`}>{isSelected ? <> <FaCheck/> Added To Stack</> : "Add To Stack"}</button>
                 </div>
 
             </div>

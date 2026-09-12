@@ -20,7 +20,7 @@ function App() {
     <>
       <Nav />
       <Hero />
-      <Suspense fallback = {<h2>Loading.....</h2>}>
+      <Suspense fallback={<span className="loading loading-spinner text-secondary flex justify-center items-center mx-auto h-screen"></span>}>
         <Tech techPromise = {techPromise}/>
       </Suspense>
     </>

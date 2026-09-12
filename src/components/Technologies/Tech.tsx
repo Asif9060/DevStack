@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import type { ITechnology } from "../../types/Technology";
 import TechCard from "./TechCard";
 import TechStack from "./TechStack";
@@ -9,6 +9,10 @@ interface TechProps {
 
 const Tech = ({ techPromise }: TechProps) => {
     const fetchedTech = use(techPromise);
+    const [selectedTechs , setSelectedTechs] = useState<ITechnology[]>([]);
+
+
+
     return (
         <div>
             <div className="max-w-7xl mx-auto">
@@ -20,13 +24,13 @@ const Tech = ({ techPromise }: TechProps) => {
                 <div className=" grid col-span-3 grid-cols-3">
                     {
                         fetchedTech.map((tech) => {
-                            return <TechCard key={tech.id} tech={tech} />
+                            return <TechCard key={tech.id} tech={tech} selectedTechs = {selectedTechs} setSelectedTechs = {setSelectedTechs}/>
                         })
                     }
                 </div>
 
                 <div>
-                    <TechStack/>
+                    <TechStack selectedTechs={selectedTechs} setSelectedTechs={setSelectedTechs}/>
                 </div>
 
             </div>
