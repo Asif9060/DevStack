@@ -5,3 +5,13 @@
   --font-inter: "Inter",sans-serif;
   --font-jakarta: "Plus Jakarta Sans",sans-serif;
 }
+
+@layer utilities {
+  .brand-gradient{
+    @apply bg-linear-to-r
+    from-[#FF5722]
+    via-[#D81B7E]
+    to-[#7C3AED];
+    
+  }
+}

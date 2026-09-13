@@ -13,12 +13,12 @@ const TechStack = ({ selectedTechs, setSelectedTechs }: CardProps) => {
     const handleRemoveTech = (techName: string) => {
         const remainingTech = selectedTechs.filter((tech) => tech.name !== techName)
         setSelectedTechs(remainingTech)
-        toast.warning(`Removed ${techName} from your tech stack.`, { position: "bottom-right" })
+        toast.info(`Removed ${techName} from your tech stack.`, { position: "bottom-right" })
     }
 
     const handleRemoveAllTech = () => {
         setSelectedTechs([]);
-        toast.warning("All technologies removed from your stack", { position: "bottom-right" })
+        toast.info("All technologies removed from your stack", { position: "bottom-right" })
     }
 
     return (
@@ -26,14 +26,14 @@ const TechStack = ({ selectedTechs, setSelectedTechs }: CardProps) => {
             <div className="p-5 shadow-sm rounded-2xl md:w-75 w-85 justify-center mx-auto md:mx-0 md:justify-start">
                 <div className="mb-5">
                     <h2 className="text-[16px] text-[#0F172A] font-bold">Your Stack</h2>
-                    <p className="text-[#94A3B8] text-[12px] font-normal">{selectedTechs.length > 0 ? `${selectedTechs.length} Technology Selected` : "No technologies selected yet"}</p>
+                    <p className="text-[#94A3B8] text-[12px] font-normal">{selectedTechs.length > 0 ? `${selectedTechs.length} ${selectedTechs.length > 1 ? "Technologies" : "Technology"} Selected` : "No technologies selected yet"}</p>
                 </div>
-                <div className={`${selectedTechs.length > 0 ? "" : "p-6 border border-[#E2E8F0] rounded-xl border-dotted "}`}>
+                <div className={`${selectedTechs.length > 0 ? "" : "p-6 border-2 border-[#E2E8F0] rounded-xl border-dotted "}`}>
                     {
                         selectedTechs.length === 0 ? (<p className="text-[#94A3B8] text-center">Your stack is empty.</p>) : (
                             selectedTechs.map((tech) => {
                                 return (
-                                    <div className="flex items-center justify-between border mb-2 border-[#E2E8F0] rounded-lg p-2.5">
+                                    <div key={tech.id} className="flex items-center justify-between border mb-2 border-[#E2E8F0] rounded-lg p-2.5">
                                         <div className="flex items-center">
                                             <div className="mr-3">
                                                 <img className="w-8" src={tech.icon} alt="" />
