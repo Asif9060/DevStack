@@ -1,7 +1,7 @@
 import heroImg from "../assets/banner-stack.png"
 const Hero = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto mt-10">
+        <div className="flex flex-col md:flex-col lg:flex-row items-center max-w-7xl mx-auto mt-10">
             <div className="text-center md:text-left">
                 <div className="font-inter font-bold md:text-6xl text-3xl mb-7 md:mr-17 whitespace-nowrap tracking-tighter">
                     <h2 className="text-[#0F172A]">Build Your Ideal</h2>
@@ -18,7 +18,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="md:ml-45 md:mt-0 flex justify-center">
+            <div className="mt-10 lg:mt-0 lg:ml-45 flex justify-center">
                 <img className="" src={heroImg} alt="" />
             </div>
 
