@@ -23,7 +23,7 @@ const TechStack = ({ selectedTechs, setSelectedTechs }: CardProps) => {
 
     return (
         <div className="font-jakarta mt-10">
-            <div className="p-5 shadow-sm rounded-2xl w-75 justify-center mx-auto md:mx-0 md:justify-start">
+            <div className="p-5 shadow-sm rounded-2xl md:w-75 w-85 justify-center mx-auto md:mx-0 md:justify-start">
                 <div className="mb-5">
                     <h2 className="text-[16px] text-[#0F172A] font-bold">Your Stack</h2>
                     <p className="text-[#94A3B8] text-[12px] font-normal">{selectedTechs.length > 0 ? `${selectedTechs.length} Technology Selected` : "No technologies selected yet"}</p>

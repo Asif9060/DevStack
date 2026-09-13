@@ -23,7 +23,7 @@ const TechCard = ({ tech, selectedTechs, setSelectedTechs }: CardProps) => {
 
     return (
         <div className="max-w-7xl mx-auto mt-10">
-            <div className={`w-75 shadow-sm p-5 rounded-2xl font-jakarta ${isSelected ? "border-2 border-[#f182ba] shadow-md shadow-[#eeb7d2]" : ""}`}>
+            <div className={`md:w-75 w-85 shadow-sm p-5 rounded-2xl font-jakarta ${isSelected ? "border-2 border-[#f182ba] shadow-md shadow-[#eeb7d2]" : ""}`}>
                 <div className="flex justify-between mb-8">
                     <img className="w-8" src={tech.icon} alt="" />
                     <p style={{backgroundColor: tech.badgeBg, color: tech.badgeText}} className="rounded-full px-[10.4px] py-0.5 flex items-center text-[11.5px]">{tech.badge}</p>
